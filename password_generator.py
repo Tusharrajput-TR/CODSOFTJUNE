@@ -1,9 +1,9 @@
 import random
-
-length = int(input("Enter password length: "))
-password = ""
-
+chars="abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()"
+length-int(input("Enter Length: "))
+password=""
 for i in range(length):
-    password += random.choice("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+    password+=random.choice(chars)
+print(password)
 
-print("Generated password:", password)
+
