@@ -2,7 +2,7 @@ task_lst=[]
 def add_task():
     enter_task=input("Enter the task:")
     task_lst.append(enter_task)
-def remove_task():
+def remove_task_():
     remove_task=input("Enter the task:")
     if remove_task in task_lst:
         task_lst.remove(remove_task)
@@ -21,7 +21,7 @@ while True :
     if ch==1:
         add_task()
     elif ch==2:
-        remove_task()
+        remove_task_()
     elif ch==3:
         view_task()
     elif ch==4:
